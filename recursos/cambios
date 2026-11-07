@@ -1,0 +1,9 @@
+1.- Crear los POJOS necesarios.
+2.- Crear la clase repository y service de cada uno de los POJOS
+3.- Crear la clase controller correspondiente a los POJOS
+4.- Agregar funcionalidad con anotaciones en los POJOS
+5.- Agregar loombok
+6.- Agregar logback
+7.- Empaquetar respuestas
+8.- Perfiles
+java -jar -Dspring.profiles.active=prod target/modulo65-0.0.1-SNAPSHOT.jar

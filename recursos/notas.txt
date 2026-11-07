@@ -1,0 +1,30 @@
+Tabla
+**********
+	CREATE TABLE usuario (
+    	id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    	nombre VARCHAR(100),
+    	edad INT
+	);
+	CREATE TABLE telefono (
+    	id_telefono INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    	id_usuario INT NOT NULL,
+    	tipo_telefono VARCHAR(20),
+    	lada INT,
+    	numero VARCHAR(15)
+	);
+
+Docker
+**********
+Ejecutar ls siguientes comandos para iniciar los servicios de Docker
+---------------
+docker run --rm --name mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql
+docker run --rm --name adminer -d -p 8081:8080 adminer
+
+jdbc:mysql://localhost:3306/modulo40
+com.mysql.jdbc.Driver
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
